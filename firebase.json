@@ -8,5 +8,15 @@
         "value" : "max-age=0"
       } ]
     }]
+  },
+
+
+  "firestore": {
+    "rules": "firestore.rules"
+  },
+  "storage": {
+    "rules": "storage.rules"
   }
 }
+
+

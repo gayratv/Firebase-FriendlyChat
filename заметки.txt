@@ -1,0 +1,26 @@
+--Associate your app with your Firebase project by running the following command:
+firebase use --add
+
+firebase serve --only hosting
+
+To obtain this key, go to Firebase Console > Project Settings > Cloud Messaging, then copy the Server Key.
+Ключ сервера
+
+AAAAiUbCQTo:APA91bFxK3oRFI0AgljS4AnuwaYslodzKwsm6b0vfIgCo8GM_MLdVSSrniySXl7wKpC8BQI9e3vJkIaL0-DJqr5onM6Aji_mEzOHssbwb6XqD_v3ZkY3sMatuZersLUc3GmcKpVpBLbp
+
+
+https://onlinecurl.com/
+
+
+curl -H "Content-Type: application/json" \
+     -H "Authorization: key=AAAAiUbCQTo:APA91bFxK3oRFI0AgljS4AnuwaYslodzKwsm6b0vfIgCo8GM_MLdVSSrniySXl7wKpC8BQI9e3vJkIaL0-DJqr5onM6Aji_mEzOHssbwb6XqD_v3ZkY3sMatuZersLUc3GmcKpVpBLbp" \
+     -d '{
+           "notification": {
+             "title": "New chat message!",
+             "body": "There is a new message in FriendlyChat",
+             "icon": "/images/profile_placeholder.png",
+             "click_action": "http://localhost:5000"
+           },
+           "to": "fh-Tpzws6Wk:APA91bH6Wx7ginBwn1w0BMK7Y4JwA7yJzykIwcaIt-Zvb0tXdLnJcl6Vrimi8YoT8iGYFzjyUJrsf_p3XEYq2H4Hz0pLXWC44d2_N9Z7XDAYhvTox4WrdETUYNF91fZj00gZ2tyMBzLO"
+         }' \
+     https://fcm.googleapis.com/fcm/send

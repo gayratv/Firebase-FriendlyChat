@@ -1,5 +1,6 @@
 {
   "projects": {
-    "chat": "friendlychat-gayrat"
+    "chat": "friendlychat-gayrat",
+    "default": "friendlychat-gayrat"
   }
 }

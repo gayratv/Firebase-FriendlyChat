@@ -29,3 +29,5 @@ curl -H "Content-Type: application/json" \
 ***************************************
 
 firebase init functions
+
+firebase deploy --only functions
